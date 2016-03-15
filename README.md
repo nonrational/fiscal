@@ -8,4 +8,4 @@ TODO:
  - [ ] Prepend increasingly complex business buzzwords to meeting title as you go over 4 people.
 
 
-:alarm_clock: *==*:moneybag:
+:alarm_clock::soon::money_with_wings::trollface:
