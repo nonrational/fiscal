@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "fiscal",
+  "version": "0.0.1",
+  "content_scripts": [{
+    "matches": [ "*://*.dev/*", "*://calendar.google.com/*" ],
+    "js": ["content.js"]
+  }],
+
+  "permissions": [
+    "activeTab"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}
