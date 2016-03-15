@@ -9,5 +9,3 @@ TODO:
 
 
 :alarm_clock::soon::money_with_wings::trollface:
-
-![](http://i.imgur.com/s4gtHzm.png)
