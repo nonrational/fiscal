@@ -33,11 +33,35 @@ function announce(){
         cost = HOURLY_CONSTANT * guests * duration;
 
     if(guests > 0 && duration > 0) {
+        console.log(appendFooter(cost));
         console.log(guests + " guests for " + duration + " hours = $" + cost);
     }
 }
 
 setInterval(announce, 5000);
+
+function appendFooter(cost){
+    var descriptionTextArea = document.querySelectorAll("div.ui-sch > textarea");
+
+    if (!descriptionTextArea || descriptionTextArea.length === 0){
+        return false;
+    }
+
+    var textArea = descriptionTextArea[0],
+        prefix = "\n--\nFisCal",
+        description = textArea.value,
+        footerIdx = description.indexOf(prefix),
+        originalMessage = description.substring(0, footerIdx >= 0 ? footerIdx : description.length)
+        footer = prefix + " estimates that this meeting will cost $" + cost + ".\nhttp://github.com/nonrational/fiscal\n";
+
+    textArea.value = originalMessage + footer;
+    return true;
+}
+
+function _description(){
+    var descriptionTextArea = document.querySelectorAll("div.ui-sch > textarea")
+    return descriptionTextArea && descriptionTextArea.length > 0 ? descriptionTextArea[0] : { value: "" };
+}
 
 function _duration(){
     var startDateTime = _startTime(),
