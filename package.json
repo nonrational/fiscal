@@ -1,0 +1,27 @@
+{
+  "name": "fiscal",
+  "version": "0.0.1",
+  "description": "a silly, but guilt inducing, Chrome plugin for Google Calendar",
+  "main": "content.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-crx": "^1.0.2",
+    "grunt-init": "^0.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nonrational/fiscal"
+  },
+  "author": "Alan Norton <me@alannorton.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nonrational/fiscal/issues"
+  },
+  "homepage": "https://github.com/nonrational/fiscal"
+}

@@ -1,7 +1,7 @@
 // console.js
-console.log('fiscal v0.0.1')
+console.log('fiscal v0.0.1');
 
-var HOURLY_CONSTANT = 60
+var HOURLY_CONSTANT = 60;
 
 function appendFooter(cost){
     var descriptionTextArea = document.querySelectorAll("div.ui-sch > textarea");
@@ -14,7 +14,7 @@ function appendFooter(cost){
         prefix = "\n--\nFisCal",
         description = textArea.value,
         footerIdx = description.indexOf(prefix),
-        originalMessage = description.substring(0, footerIdx >= 0 ? footerIdx : description.length)
+        originalMessage = description.substring(0, footerIdx >= 0 ? footerIdx : description.length),
         footer = prefix + " estimates that this meeting will cost $" + cost + ".\nhttp://github.com/nonrational/fiscal\n";
 
     textArea.value = originalMessage + footer;
@@ -32,17 +32,17 @@ function _duration(){
 }
 
 function _guests(){
-    var guestList = document.querySelectorAll("div[id$=guests].ep-dp-guests div.ep-gl-guest")
+    var guestList = document.querySelectorAll("div[id$=guests].ep-dp-guests div.ep-gl-guest");
     return guestList ? guestList.length : 0;
 }
 
 function _startTime(){
-    var startInput = document.querySelectorAll("input[id$=st].text.dr-time")
+    var startInput = document.querySelectorAll("input[id$=st].text.dr-time");
     return startInput && startInput.length > 0 ? parseTime(startInput[0].value) : null;
 }
 
 function _endTime(){
-    var endInput = document.querySelectorAll("input[id$=et].text.dr-time")
+    var endInput = document.querySelectorAll("input[id$=et].text.dr-time");
     return endInput && endInput.length > 0 ? parseTime(endInput[0].value) : null;
 }
 
