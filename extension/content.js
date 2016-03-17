@@ -33,7 +33,7 @@ function _duration(){
 
 function _guests(){
     var guestList = Array.prototype.slice.apply(document.querySelectorAll("div[id$=guests].ep-dp-guests div.ep-gl-guest"))
-                         .filter(function(n,i,a){ return n.title.indexOf('removed') < 0 });
+                         .filter(function(n,i,a){ return n.title.indexOf('removed') < 0; });
     return guestList ? guestList.length : 0;
 }
 
