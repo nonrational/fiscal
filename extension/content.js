@@ -32,7 +32,8 @@ function _duration(){
 }
 
 function _guests(){
-    var guestList = document.querySelectorAll("div[id$=guests].ep-dp-guests div.ep-gl-guest");
+    var guestList = Array.prototype.slice.apply(document.querySelectorAll("div[id$=guests].ep-dp-guests div.ep-gl-guest"))
+                         .filter(function(n,i,a){ return n.title.indexOf('removed') < 0 });
     return guestList ? guestList.length : 0;
 }
 
@@ -76,9 +77,10 @@ function announce(){
         cost = HOURLY_CONSTANT * guests * duration;
 
     if(guests > 0 && duration > 0) {
-        console.log(appendFooter(cost));
-        console.log(guests + " guests for " + duration + " hours = $" + cost);
+        appendFooter(cost);
+        // console.log();
+        // console.log(guests + " guests for " + duration + " hours = $" + cost);
     }
 }
 
-setInterval(announce, 5000);
+setInterval(announce, 1000);
