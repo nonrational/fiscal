@@ -6,7 +6,12 @@
     "matches": [ "*://*.dev/*", "*://calendar.google.com/*" ],
     "js": ["content.js"]
   }],
-
+  "icons": {
+    "16": "assets/iconx16.png",
+    "24": "assets/iconx24.png",
+    "48": "assets/iconx48.png",
+    "128": "assets/iconx128.png"
+  },
   "permissions": [
     "activeTab"
   ],

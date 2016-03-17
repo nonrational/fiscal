@@ -8,6 +8,8 @@ TODO:
  - [ ] Prepend increasingly complex business buzzwords to meeting title as you go over 4 people.
 
 
-:alarm_clock::soon::money_with_wings::trollface:
-
 ![Screenshot](http://i.imgur.com/3WBSlLQ.png)
+
+##### Credits
+- https://7icons.wordpress.com/2010/08/16/calendar-money-2/
+- http://www.timlabonne.com/2013/07/parsing-a-time-string-with-javascript/
