@@ -96,8 +96,6 @@ var gcal = (function(doc, util){
 
 })(document, util);
 
-
-
 setInterval(function(){
     gcal.appendFooter(gcal.cost());
 }, 2500);
