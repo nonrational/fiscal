@@ -27,7 +27,7 @@ var util = {
         dt.setSeconds(0, 0);
         return dt;
     }
-}
+};
 
 var gcal = (function(doc, util){
 
@@ -92,12 +92,12 @@ var gcal = (function(doc, util){
         duration: duration,
         cost: cost,
         appendFooter: appendFooter
-    }
+    };
 
-})(document, util)
+})(document, util);
 
 
 
 setInterval(function(){
-    gcal.appendFooter(gcal.cost())
+    gcal.appendFooter(gcal.cost());
 }, 2500);
