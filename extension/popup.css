@@ -1,0 +1,23 @@
+html {
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+div#button {
+  margin: 5px 0 0 36px;
+}
+
+label {
+  margin: 0 5px;
+}
+
+input {
+  width: 50px;
+  height: 25px;
+}
+

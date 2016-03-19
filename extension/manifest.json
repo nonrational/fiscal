@@ -7,17 +7,29 @@
     "js": ["content.js"]
   }],
   "icons": {
-    "16": "assets/iconx16.png",
-    "24": "assets/iconx24.png",
-    "48": "assets/iconx48.png",
-    "128": "assets/iconx128.png"
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "64": "assets/icon64.png",
+    "128": "assets/icon128.png"
   },
   "permissions": [
-    "activeTab"
+      "activeTab",
+      "declarativeContent",
+      "contextMenus",
+      "*://*.dev/*",
+      "*://calendar.google.com/*"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "background": {
     "persistent": false,
     "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+        "16": "assets/icon16.png",
+        "32": "assets/icon32.png"
+    },
+    "default_title": "FisCal",
+    "default_popup": "popup.html"
   }
 }
